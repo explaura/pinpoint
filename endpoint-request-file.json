@@ -1,0 +1,31 @@
+{
+  "ChannelType": "SMS",
+  "Address": "+61426086095",
+  "Attributes": {
+    "Interests": [
+      "Art",
+      "Music",
+      "Hockey"
+    ]
+  },
+  "Metrics": {
+    "art_interest_level": 7.0,
+    "music_interest_level": 8.0,
+    "hockey_interest_level": 4.0
+  },
+  "Demographic": {
+    "AppVersion": "1.0",
+    "Make": "google",
+    "Model": "Pixel 2",
+    "Platform": "android",
+    "PlatformVersion": "10",
+    "Timezone": "Australia/Sydney"
+  },
+  "Location": {
+    "Country": "AU",
+    "City": "Sydney",
+    "PostalCode": "2042",
+    "Latitude": -33.8999069,
+    "Longitude": 151.1714736
+  }
+}
