@@ -26,6 +26,8 @@ amplify add analytics
 amplify push
 ```
 
+**Note that Pinpoint contains a region mapping. For `ap-southeast-2` region the Pinpoint analytics are created in `us-west-2`**
+
 ## Endpoints
 
 Add an imported endpoint:
