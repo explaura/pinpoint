@@ -33,6 +33,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     // Amplify
     implementation 'com.amplifyframework:core:0.10.0'
+    implementation 'com.amplifyframework:aws-analytics-pinpoint:0.10.0'
     implementation 'com.amplifyframework:aws-api:0.10.0'
     // Testing
     testImplementation 'junit:junit:4.12'
