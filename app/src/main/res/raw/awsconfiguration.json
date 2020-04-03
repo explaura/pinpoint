@@ -4,19 +4,10 @@
     "IdentityManager": {
         "Default": {}
     },
-    "AppSync": {
-        "Default": {
-            "ApiUrl": "https://df5xosf7mrbwxnocl5ulntfcwq.appsync-api.ap-southeast-2.amazonaws.com/graphql",
-            "Region": "ap-southeast-2",
-            "AuthMode": "API_KEY",
-            "ApiKey": "da2-m2fjzswc4zcm5crflndz6bopyi",
-            "ClientDatabasePrefix": "amplifyDatasource_API_KEY"
-        }
-    },
     "CredentialsProvider": {
         "CognitoIdentity": {
             "Default": {
-                "PoolId": "ap-southeast-2:55e09751-0e54-4629-925b-590402204c90",
+                "PoolId": "ap-southeast-2:0bc90411-85b7-491d-8392-540c1a0228b2",
                 "Region": "ap-southeast-2"
             }
         }
@@ -28,13 +19,22 @@
     },
     "PinpointAnalytics": {
         "Default": {
-            "AppId": "28dbebbec6324a80953495c1d187d76e",
+            "AppId": "e756646519d5473cb151e2fcb5972b99",
             "Region": "us-west-2"
         }
     },
     "PinpointTargeting": {
         "Default": {
             "Region": "us-west-2"
+        }
+    },
+    "AppSync": {
+        "Default": {
+            "ApiUrl": "https://fstuxbtem5aztmemvqyhqftwge.appsync-api.ap-southeast-2.amazonaws.com/graphql",
+            "Region": "ap-southeast-2",
+            "AuthMode": "API_KEY",
+            "ApiKey": "da2-4iwwy6z5g5h5xgaxjvrchyubqq",
+            "ClientDatabasePrefix": "amplifyDatasource_API_KEY"
         }
     }
 }

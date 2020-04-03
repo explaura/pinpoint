@@ -1,10 +1,10 @@
 {
     "appName": "pinpoint",
-    "roleName": "pinpointLambdaRole27c9a0ac",
-    "cloudWatchPolicyName": "cloudWatchPolicy27c9a0ac",
-    "pinpointPolicyName": "pinpointPolicy27c9a0ac",
-    "authPolicyName": "pinpoint_amplify_27c9a0ac",
-    "unauthPolicyName": "pinpoint_amplify_27c9a0ac",
+    "roleName": "pinpointLambdaRole698a3d34",
+    "cloudWatchPolicyName": "cloudWatchPolicy698a3d34",
+    "pinpointPolicyName": "pinpointPolicy698a3d34",
+    "authPolicyName": "pinpoint_amplify_698a3d34",
+    "unauthPolicyName": "pinpoint_amplify_698a3d34",
     "authRoleName": {
         "Ref": "AuthRoleName"
     },

@@ -4,10 +4,10 @@
             "awsAPIPlugin": {
                 "amplifyDatasource": {
                     "endpointType": "GraphQL",
-                    "endpoint": "https://df5xosf7mrbwxnocl5ulntfcwq.appsync-api.ap-southeast-2.amazonaws.com/graphql",
+                    "endpoint": "https://fstuxbtem5aztmemvqyhqftwge.appsync-api.ap-southeast-2.amazonaws.com/graphql",
                     "region": "ap-southeast-2",
                     "authorizationType": "API_KEY",
-                    "apiKey": "da2-m2fjzswc4zcm5crflndz6bopyi"
+                    "apiKey": "da2-4iwwy6z5g5h5xgaxjvrchyubqq"
                 }
             }
         }
@@ -16,7 +16,7 @@
         "plugins": {
             "awsPinpointAnalyticsPlugin": {
                 "pinpointAnalytics": {
-                    "appId": "28dbebbec6324a80953495c1d187d76e",
+                    "appId": "e756646519d5473cb151e2fcb5972b99",
                     "region": "us-west-2"
                 },
                 "pinpointTargeting": {

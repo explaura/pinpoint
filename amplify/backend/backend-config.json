@@ -1,24 +1,10 @@
 {
-	"api": {
-		"amplifyDatasource": {
-			"service": "AppSync",
-			"providerPlugin": "awscloudformation",
-			"output": {
-				"authConfig": {
-					"additionalAuthenticationProviders": [],
-					"defaultAuthentication": {
-						"authenticationType": "API_KEY",
-						"apiKeyConfig": {
-							"description": "",
-							"apiKeyExpirationDays": 7
-						}
-					}
-				}
-			}
-		}
-	},
 	"auth": {
-		"cognitoafa4e6b5": {
+		"cognitoba6552a7": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		},
+		"cognito3e91c23a": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation"
 		}
