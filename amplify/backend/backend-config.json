@@ -1,18 +1,31 @@
 {
-	"auth": {
-		"cognitoba6552a7": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation"
-		},
-		"cognito3e91c23a": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation"
-		}
-	},
-	"analytics": {
-		"pinpoint": {
-			"service": "Pinpoint",
-			"providerPlugin": "awscloudformation"
-		}
-	}
+    "auth": {
+        "cognito3e91c23a": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": []
+        },
+        "userPoolGroups": {
+            "service": "Cognito-UserPool-Groups",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [
+                {
+                    "category": "auth",
+                    "resourceName": "cognito3e91c23a",
+                    "attributes": [
+                        "UserPoolId",
+                        "AppClientIDWeb",
+                        "AppClientID",
+                        "IdentityPoolId"
+                    ]
+                }
+            ]
+        }
+    },
+    "analytics": {
+        "pinpoint": {
+            "service": "Pinpoint",
+            "providerPlugin": "awscloudformation"
+        }
+    }
 }

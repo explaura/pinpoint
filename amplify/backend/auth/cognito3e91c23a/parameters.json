@@ -1,7 +1,36 @@
 {
     "identityPoolName": "pinpoint_identitypool_da767e39",
     "allowUnauthenticatedIdentities": true,
-    "authSelections": "identityPoolOnly",
+    "resourceNameTruncated": "cognitc89bdbed",
+    "userPoolName": "cognito3e91c23a_userpool_c89bdbed",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "userpoolClientLambdaRole": "cognitc89bdbed_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "authSelections": "identityPoolAndUserPool",
     "resourceName": "cognito3e91c23a",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -14,5 +43,9 @@
             "UnauthRole",
             "Arn"
         ]
-    }
+    },
+    "userPoolGroupList": [
+        "users"
+    ],
+    "dependsOn": []
 }
