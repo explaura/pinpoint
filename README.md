@@ -2,15 +2,33 @@
 
 ## Requirements
 - saml2aws
+- amplify CLI
 
-## Pinpoint Endpoints
+## Getting started with Pinpoint
 
 1. Login to AWS using `saml2aws`:
 ```bash
 saml2aws login
 ```
 
-2. Add an endpoint:
+2. Initialise project with Amplify
+```bash
+amplify init
+```
+
+2. Register Pinpoint 
+```bash
+amplify add analytics
+```
+
+3. Create analytics in AWS
+```bash
+amplify push
+```
+
+## Endpoints
+
+Add an imported endpoint:
 ```bash
 aws pinpoint update-endpoint \
     --application-id 5b779659e645452d8acc6fe293918eb8 \
