@@ -8,6 +8,9 @@ import android.view.MenuItem;
 
 import com.amplifyframework.AmplifyException;
 import com.amplifyframework.analytics.AnalyticsException;
+import com.amplifyframework.analytics.BasicAnalyticsEvent;
+import com.amplifyframework.analytics.UserProfile;
+import com.amplifyframework.analytics.pinpoint.PinpointProperties;
 import com.amplifyframework.core.Amplify;
 import com.amplifyframework.analytics.pinpoint.AmazonPinpointAnalyticsPlugin;
 import com.amplifyframework.core.AmplifyConfiguration;
@@ -21,6 +24,7 @@ import com.amplifyframework.core.category.CategoryConfiguration;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.util.UUID;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
@@ -82,7 +86,17 @@ public class MainActivity extends AppCompatActivity {
         } catch (AmplifyException e) {
             e.printStackTrace();
         }
-        Amplify.Analytics.recordEvent("test-event");
+
+        Amplify.Analytics.recordEvent("User login");
+        Amplify.Analytics.identifyUser("002", UserProfile.builder()
+                .name("Claire Boucher")
+                .email("grimes@gmail.com")
+                .location(UserProfile.Location.builder()
+                        .city("Los Angeles")
+                        .country("United States")
+                        .region("California")
+                        .build())
+                .build());
     }
 
     @Override
@@ -105,5 +119,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void recordEvent() throws AnalyticsException {
+        BasicAnalyticsEvent event = new BasicAnalyticsEvent("Amplify-event" + UUID.randomUUID().toString(),
+                PinpointProperties.builder()
+                        .add("App", "Pinpoint")
+                        .add("Version", 1.0)
+                        .build());
+
+        Amplify.Analytics.recordEvent(event);
     }
 }

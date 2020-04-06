@@ -38,6 +38,12 @@ aws pinpoint update-endpoint \
     --endpoint-request file://endpoint-request-file.json
 ```
 
+Alternatively, follow the documentation found [here.](https://docs.aws.amazon.com/pinpoint/latest/userguide/gettingstarted-import-customer-data.html)
+
+## Segments & Campaigns
+
+[This tutorial](https://docs.aws.amazon.com/pinpoint/latest/userguide/gettingstarted.html) provides a simple way to create a segment based off existing/imported endpoints, and then creating a campaign to target that segment.
+
 ## Learnings
 
 - Endpoints: 
